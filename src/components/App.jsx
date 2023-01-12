@@ -1,16 +1,14 @@
+import PaintingList from '../components/PaintingList';
+import Section from '../components/Section';
+import paintings from '../components/paintings.json';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <Section title='Топ недели'>
+        <PaintingList items={paintings} />
+      </Section>
+      <Section />
     </div>
   );
 };
